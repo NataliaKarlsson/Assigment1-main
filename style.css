@@ -1,0 +1,70 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(120deg, #ce9aff 0%, #65b5f6 100%);
+    width: 1024;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-areas: "header header header header header"
+        "main main main maim aside"
+        "footer footer footer footer footer";
+}
+
+header {
+
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "logo navbar navbar navbar login";
+    background-color: whitesmoke;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#navbar {
+    grid-area: navbar;
+    background-color: whitesmoke;
+    color: gold;
+    background: blue;
+    border: 2px solid black;
+}
+
+#login {
+    grid-area: login;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: "mainhead mainarticle section article";
+}
+
+#mainhead {
+    grid-area: mainHead;
+    background-color: bisque;
+}
+
+#mainarticle {
+    grid-area: mainarticle;
+}
+
+#section {
+    background-color: blanchedalmond
+}
+
+#article {
+    background-color: blanchedalmond;
+}
+
+#aside {
+    grid-area: aside;
+    background: cornflowerblue;
+}
+
+footer {
+    grid-area: footer;
+}
