@@ -11,7 +11,9 @@ body {
     display: grid;
     grid-template-areas: "header header header header header"
         "main main main maim aside"
+        "main main main maim aside"
         "footer footer footer footer footer";
+        
 }
 
 header {
@@ -45,25 +47,34 @@ header {
 main {
     display: grid;
     grid-area: main;
-    grid-template-areas: "mainhead mainarticle section article";
+    grid-template-areas: "mainhead mainhead mainhead" "mainarticle section article";
 
 }
 
 #mainhead {
-    grid-area: mainHead;
+    grid-area: mainhead;
+    display: grid;
     background-color: bisque;
+    grid-template-areas: "mainarticle mainarticle mainarticle";
+
     
 }
 
 #mainarticle {
+    display: grid;
     grid-area: mainarticle;
+    grid-template-areas: "section article article";
     
 }
 
 #section {
-    background-color: blanchedalmond
+    background-color: blanchedalmond;
+    
 }
-
+#section .p {
+font-weight: bold;
+color: blue;
+}
 #article {
     background-color: blanchedalmond;
 }
@@ -71,6 +82,8 @@ main {
 #aside {
     grid-area: aside;
     background-color: rgb(184, 135, 222);
+    
+    
 }
 
 footer {
